@@ -1,10 +1,9 @@
 package test;
 
-import com.google.common.base.Predicate;
+import static junit.framework.Assert.assertNotNull;
 
 import java.io.Serializable;
-
-import static junit.framework.Assert.*;
+import java.util.function.Predicate;
 
 /**
  * For testing nested objects
@@ -43,7 +42,8 @@ public class Foo implements Predicate<Void>, Serializable {
     /**
      * Verify that the object is still in a good state
      */
-    public boolean apply(Void aVoid) {
+    @Override
+    public boolean test(Void aVoid) {
         one.validate();
         two.validate();
         return true;
