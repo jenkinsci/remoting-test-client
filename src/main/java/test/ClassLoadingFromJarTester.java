@@ -2,6 +2,7 @@ package test;
 
 import com.google.common.base.Function;
 import hudson.remoting.Callable;
+import org.jenkinsci.remoting.RoleChecker;
 
 /**
  * @author Kohsuke Kawaguchi
@@ -18,5 +19,10 @@ public class ClassLoadingFromJarTester implements Callable<Object,Exception>, Fu
     public Void apply(Function function) {
         this.verifier = function;
         return null;
+    }
+
+    @Override
+    public void checkRoles(RoleChecker checker) throws SecurityException {
+        throw new UnsupportedOperationException();
     }
 }
