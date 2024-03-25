@@ -2,6 +2,7 @@ package test;
 
 import hudson.remoting.Callable;
 import org.apache.commons.io.IOUtils;
+import org.jenkinsci.remoting.RoleChecker;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -52,5 +53,10 @@ public class HelloGetResources implements Callable<String,IOException> {
             b.append('\n');
         }
         return b.toString();
+    }
+
+    @Override
+    public void checkRoles(RoleChecker checker) throws SecurityException {
+        throw new UnsupportedOperationException();
     }
 }
