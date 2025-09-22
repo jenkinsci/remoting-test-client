@@ -74,7 +74,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
       <artifactId>remoting</artifactId>
-      <version>3327.v868139a_d00e0</version>
+      <version>3341.v0766d82b_dec0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
