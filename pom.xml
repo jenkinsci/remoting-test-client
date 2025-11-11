@@ -58,6 +58,7 @@ THE SOFTWARE.
     <gitHubRepo>jenkinsci/${project.artifactId}</gitHubRepo>
     <!-- TODO fix medium-threshold violations -->
     <spotbugs.threshold>High</spotbugs.threshold>
+    <ban-junit4-imports.skip>false</ban-junit4-imports.skip>
   </properties>
 
   <dependencies>
@@ -67,9 +68,8 @@ THE SOFTWARE.
       <version>2.21.0</version>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.main</groupId>
