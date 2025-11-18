@@ -1,9 +1,9 @@
 package test;
 
-import static junit.framework.Assert.assertNotNull;
-
 import java.io.Serializable;
 import java.util.function.Predicate;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
  * For testing nested objects

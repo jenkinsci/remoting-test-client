@@ -1,11 +1,12 @@
-package jenkins;
+package test;
 
-import org.junit.Test;
 
-public class Junit4TestsRanTest {
+import org.junit.jupiter.api.Test;
+
+class DummyTest {
 
     @Test
-    public void anything() {
+    void anything() {
         /*
          * Intentionally blank. We just want a test that runs with JUnit so that buildPlugin() works
          * in the Jenkinsfile.
