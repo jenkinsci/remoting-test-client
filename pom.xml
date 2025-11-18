@@ -32,7 +32,7 @@ THE SOFTWARE.
   </parent>
 
   <artifactId>remoting-test-client</artifactId>
-  <version>${revision}${changelist}</version>
+  <version>${changelist}</version>
   <name>Client code that uses remoting for tests</name>
   <description>This module is separate because some of the tests require code in a jar file not available in the default classpath.</description>
   <url>https://github.com/jenkinsci/${project.artifactId}</url>
@@ -53,8 +53,7 @@ THE SOFTWARE.
   </scm>
 
   <properties>
-    <revision>1.4</revision>
-    <changelist>-SNAPSHOT</changelist>
+    <changelist>999999-SNAPSHOT</changelist>
     <gitHubRepo>jenkinsci/${project.artifactId}</gitHubRepo>
     <!-- TODO fix medium-threshold violations -->
     <spotbugs.threshold>High</spotbugs.threshold>
