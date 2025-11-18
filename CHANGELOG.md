@@ -1,3 +1,5 @@
+# Superseded by GitHub releases: https://github.com/jenkinsci/remoting-test-client/releases/
+
 Release Notes
 ====
 
